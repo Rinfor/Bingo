@@ -1,5 +1,6 @@
 #include <ctime>
 #include "Game.h"
+#include "BingoUtils.h"
 
 void main()
 {
@@ -15,6 +16,9 @@ void main()
 			game->Render();
 		}
 	}
+	BingoUtils::Log("Prueba");
+	BingoUtils::Log("Prueba del branch");
+
 	game->EndPlay();
 	delete game;
 	getchar();
